@@ -16,9 +16,6 @@ const DEFAULT_HERO = {
   ctaHref: '/contact',
   secondaryCtaText: 'View Our Work',
   secondaryCtaHref: '/portfolio',
-  logoUrl:
-    'https://pub-60de11c8c43b49ea9bd786eb6273aa91.r2.dev/93249a4a4b92beb541bee844fed5716b.png',
-  logoAlt: 'Webline Logo',
   features: ['Modern & Responsive Design', 'Optimized Performance', 'Strategic User Experience'],
   trustBadge: 'Trusted by 100+ Businesses',
   backgroundImageUrl:
@@ -66,21 +63,6 @@ export default function Hero(props: HeroProps) {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
-          {/* Logo */}
-          <div
-            className={`mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
-          >
-            <Image
-              src={config.logoUrl}
-              alt={config.logoAlt}
-              width={180}
-              height={60}
-              className="h-12 md:h-16 lg:h-20 w-auto object-contain"
-              data-editable-src="logoUrl"
-              priority
-            />
-          </div>
-
           {/* Trust Badge */}
           <div
             className={`mb-6 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}

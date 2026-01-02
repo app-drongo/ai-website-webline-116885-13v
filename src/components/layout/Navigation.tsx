@@ -8,9 +8,8 @@ import { useState } from 'react';
 import { useSmartNavigation } from '@/hooks/useSmartNavigation';
 
 const DEFAULT_NAVIGATION = {
-  logoUrl:
-    'https://pub-60de11c8c43b49ea9bd786eb6273aa91.r2.dev/93249a4a4b92beb541bee844fed5716b.png',
-  logoAlt: 'Webline Logo',
+  logoUrl: '/logo copy.svg',
+  logoAlt: 'Company Logo',
   navItems: [{ label: 'Home', href: '#hero' }],
   ctaText: 'Get Started',
   ctaHref: '#hero',
